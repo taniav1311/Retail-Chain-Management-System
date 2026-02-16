@@ -195,4 +195,5 @@ with get_conn() as conn, conn.cursor(cursor_factory=RealDictCursor) as cur:
             df = pd.DataFrame(records)
             st.dataframe(df)
         else:
+
             st.info("No records found.")
